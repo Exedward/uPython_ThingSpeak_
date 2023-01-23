@@ -20,6 +20,7 @@ def conectaWifi():
         pass
     led.value(0)
     print(f"--> Conectado! ====< IP: {wifi.ifconfig()[0]} >====\n\n")
+    print("")
 
 
 conectaWifi()
@@ -36,7 +37,7 @@ while True:
     rq.post(
         link,
         json = writeCloud,
-        headers = http_readers
+        headers = http_readers 
         )
     print(f"{cont} Enviado!\n")
     
