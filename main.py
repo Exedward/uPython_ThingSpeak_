@@ -20,9 +20,7 @@ def conectaWifi():
         pass
     led.value(0)
     print(f"--> Conectado! ====< IP: {wifi.ifconfig()[0]} >====\n\n")
-    
-    titulo = "EduardoTeste"
-    print(f"Título Do Projeto: {titulo}\n\n")
+
 
 conectaWifi()
 
